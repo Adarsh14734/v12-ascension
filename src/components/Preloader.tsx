@@ -13,10 +13,11 @@ export default function Preloader({ onComplete }: PreloaderProps) {
   useEffect(() => {
     const totalFrames = 30;
     let loadedCount = 0;
+    const prefix = process.env.NODE_ENV === 'production' ? '/v12-ascension' : '';
 
     const frameUrls = Array.from({ length: totalFrames }, (_, i) => {
       const idx = (i + 1).toString().padStart(3, "0");
-      return `/v12-ascension/engine2/${idx}.png`;
+      return `${prefix}/engine2/${idx}.png`;
     });
 
     frameUrls.forEach((url) => {

@@ -15,11 +15,12 @@ export default function MotorCanvas() {
     let loadedImages = 0;
     const TOTAL_FRAMES = 30;
     const loadedArray: HTMLImageElement[] = [];
+    const prefix = process.env.NODE_ENV === 'production' ? '/v12-ascension' : '';
 
     for (let i = 0; i < TOTAL_FRAMES; i++) {
       const img = new Image();
       const idx = (i + 1).toString().padStart(3, "0");
-      img.src = `/v12-ascension/engine2/${idx}.png`;
+      img.src = `${prefix}/engine2/${idx}.png`;
       img.onload = () => {
         loadedImages++;
         if (loadedImages === TOTAL_FRAMES) {

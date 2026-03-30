@@ -29,10 +29,10 @@ export default function DetailsSection() {
   return (
     <section className="bg-[var(--bg)] w-full text-[var(--text)] font-sans px-6 lg:px-24">
       {/* Block 1 — Overview */}
-      <div 
+      <div
         ref={(el) => {
-            if (el) blocksRef.current[0] = el;
-        }} 
+          if (el) blocksRef.current[0] = el;
+        }}
         className="py-32 max-w-4xl mx-auto opacity-0 translate-y-[40px] transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)]"
       >
         <p className="font-mono text-xs text-[var(--gold)] uppercase tracking-widest mb-6">
@@ -47,10 +47,10 @@ export default function DetailsSection() {
       <div className="w-full h-[1px] bg-[rgba(200,169,110,0.25)]" />
 
       {/* Block 2 — Features */}
-      <div 
+      <div
         ref={(el) => {
-            if (el) blocksRef.current[1] = el;
-        }} 
+          if (el) blocksRef.current[1] = el;
+        }}
         className="py-32 max-w-4xl mx-auto opacity-0 translate-y-[40px] transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)]"
       >
         <p className="font-mono text-xs text-[var(--gold)] uppercase tracking-widest mb-6">
@@ -80,10 +80,10 @@ export default function DetailsSection() {
       <div className="w-full h-[1px] bg-[rgba(200,169,110,0.25)]" />
 
       {/* Block 3 — Tech Specs */}
-      <div 
+      <div
         ref={(el) => {
-            if (el) blocksRef.current[2] = el;
-        }} 
+          if (el) blocksRef.current[2] = el;
+        }}
         className="py-32 max-w-4xl mx-auto opacity-0 translate-y-[40px] transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)]"
       >
         <p className="font-mono text-xs text-[var(--gold)] uppercase tracking-widest mb-8">
@@ -98,8 +98,8 @@ export default function DetailsSection() {
             { label: "MAX TORQUE", value: "720 Nm @ 6,800 RPM" },
             { label: "WEIGHT", value: "198 kg (Dry)" },
           ].map((spec, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className="flex justify-between items-center py-4 border-b border-[rgba(200,169,110,0.15)] last:border-0 hover:bg-[var(--gold-ghost)] transition-colors duration-300 -mx-4 px-4"
             >
               <span className="font-mono text-sm text-[var(--gold)] uppercase">{spec.label}</span>
