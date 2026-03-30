@@ -16,7 +16,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
 
     const frameUrls = Array.from({ length: totalFrames }, (_, i) => {
       const idx = (i + 1).toString().padStart(3, "0");
-      return `/engine2/${idx}.png`;
+      return `/v12-ascension/engine2/${idx}.png`;
     });
 
     frameUrls.forEach((url) => {

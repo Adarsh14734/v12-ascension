@@ -19,7 +19,7 @@ export default function MotorCanvas() {
     for (let i = 0; i < TOTAL_FRAMES; i++) {
       const img = new Image();
       const idx = (i + 1).toString().padStart(3, "0");
-      img.src = `/engine2/${idx}.png`;
+      img.src = `/v12-ascension/engine2/${idx}.png`;
       img.onload = () => {
         loadedImages++;
         if (loadedImages === TOTAL_FRAMES) {
